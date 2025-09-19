@@ -31,6 +31,15 @@
     .grid3{display:grid;gap:14px} @media(min-width:840px){.grid3{grid-template-columns:1fr 1fr 1fr}}
     .price{font-size:40px;font-weight:900;letter-spacing:.3px}
     .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+    /* --- Shorts carousel + case study image --- */
+.carousel{position:relative;margin-top:18px}
+.carousel .track{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.carousel .track > iframe{flex:0 0 300px;aspect-ratio:9/16;border:1px solid var(--line);border-radius:16px;background:#000;scroll-snap-align:center}
+.carousel .nav{position:absolute;top:50%;transform:translateY(-50%);border:1px solid var(--line);background:#0e0e0e;color:var(--fg);border-radius:999px;width:36px;height:36px;display:none;align-items:center;justify-content:center;cursor:pointer}
+@media(min-width:920px){.carousel .nav{display:flex}.carousel .prev{left:-8px}.carousel .next{right:-8px}}
+
+.case img{width:100%;height:auto;border-radius:16px;border:1px solid var(--line);display:block}
+.case figcaption{margin-top:8px}
   </style>
 
   <script type="application/ld+json">
@@ -47,6 +56,16 @@
   </script>
 </head>
 <body>
+  <script>
+  // Minimal carousel controls (works if you add more carousels too)
+  document.querySelectorAll('.carousel').forEach(caro => {
+    const track = caro.querySelector('.track');
+    const prev = caro.querySelector('.prev');
+    const next = caro.querySelector('.next');
+    if (prev) prev.addEventListener('click', () => track.scrollBy({left: -340, behavior: 'smooth'}));
+    if (next) next.addEventListener('click', () => track.scrollBy({left:  340, behavior: 'smooth'}));
+  });
+</script>
   <div class="wrap">
     <header>
       <div class="badge">Google Business Profile Management</div>
@@ -70,6 +89,48 @@
           &nbsp;<a class="cta secondary" href="#how">See how it works</a>
         </p>
       </div>
+      <!-- Shorts carousel -->
+<section id="shorts" class="panel">
+  <h2>Quick wins in 30–60s</h2>
+  <div class="carousel">
+    <button class="nav prev" aria-label="Previous">‹</button>
+    <div class="track">
+      <iframe
+        title="GBP tip 1"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        src="https://www.youtube-nocookie.com/embed/oCYc4JXwVuo?rel=0&modestbranding=1&playsinline=1"
+        allowfullscreen></iframe>
+
+      <iframe
+        title="GBP tip 2"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        src="https://www.youtube-nocookie.com/embed/_yt0YdiWySI?rel=0&modestbranding=1&playsinline=1"
+        allowfullscreen></iframe>
+
+      <iframe
+        title="GBP tip 3"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        src="https://www.youtube-nocookie.com/embed/DFf1KQV8Xso?rel=0&modestbranding=1&playsinline=1"
+        allowfullscreen></iframe>
+    </div>
+    <button class="nav next" aria-label="Next">›</button>
+  </div>
+</section>
+
+<!-- Case study image -->
+<section id="case-study" class="panel" style="margin-top:18px">
+  <h2>Case study: 50+ calls in a month</h2>
+  <figure class="case">
+    <!-- Replace the src filename with your actual uploaded image -->
+    <img src="case-study-50-calls.png"
+         alt="GBP insights showing 50+ calls in one month after consistent posts, photos, and review replies."
+         loading="lazy">
+    <figcaption class="muted mono">Real client results. Consistent posts, fresh photos, and owner-voice review replies.</figcaption>
+  </figure>
+</section>
 
       <div class="panel">
         <h2>Pricing</h2>
