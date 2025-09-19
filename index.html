@@ -27,10 +27,50 @@
     summary{cursor:pointer;font-weight:600}
     footer{margin-top:48px;padding:24px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
     input,button{font:inherit}
-    input{padding:12px;border:1px solid var(--line);border-radius:10px;background:#0f0f0f;color:#fff}
+    input{padding:12px;border:1px solid var(--line);border-radius:10px;background:#0f0f0f;color:#fff;width:100%}
     .grid3{display:grid;gap:14px} @media(min-width:840px){.grid3{grid-template-columns:1fr 1fr 1fr}}
     .price{font-size:40px;font-weight:900;letter-spacing:.3px}
     .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+
+    /* --- Case study image --- */
+    .case img{width:100%;height:auto;border-radius:16px;border:1px solid var(--line);display:block}
+    .case figcaption{margin-top:8px}
+
+    /* --- Shorts carousel (mobile-first, tap-to-activate) --- */
+    .carousel{position:relative;margin-top:18px}
+    .carousel .track{
+      display:flex;gap:12px;overflow-x:auto;padding:6px 2px 12px;
+      scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+      overscroll-behavior-x:contain;scrollbar-width:none;
+    }
+    .carousel .track::-webkit-scrollbar{display:none}
+    .slide{
+      flex:0 0 280px;max-width:320px;aspect-ratio:9/16;
+      border:1px solid var(--line);border-radius:16px;background:#000;
+      scroll-snap-align:center;position:relative;overflow:hidden;
+    }
+    .slide iframe{
+      position:absolute;inset:0;width:100%;height:100%;border:0;
+      pointer-events:none; /* block accidental drags on mobile */
+    }
+    .slide .tap{
+      position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+      background:linear-gradient(0deg, rgba(0,0,0,.45), rgba(0,0,0,.45));
+      font-weight:700;border-radius:16px;user-select:none;cursor:pointer;
+    }
+    .slide .tap span{background:#fff;color:#000;padding:8px 12px;border-radius:999px;font-size:13px}
+    .slide.active iframe{pointer-events:auto}
+    .slide.active .tap{display:none}
+
+    .carousel .nav{
+      position:absolute;top:50%;transform:translateY(-50%);
+      border:1px solid var(--line);background:#0e0e0e;color:var(--fg);
+      border-radius:999px;width:36px;height:36px;display:none;align-items:center;justify-content:center;cursor:pointer
+    }
+    @media(min-width:920px){.carousel .nav{display:flex}.carousel .prev{left:-8px}.carousel .next{right:-8px}}
+
+    /* Spacing helpers */
+    .mt-18{margin-top:18px}
   </style>
 
   <script type="application/ld+json">
@@ -54,6 +94,7 @@
       <div class="sub">RankYou99 handles weekly posts, photos, review replies, and profile optimization so you rank higher and get more calls. No contracts.</div>
     </header>
 
+    <!-- HERO -->
     <section class="hero">
       <div class="panel">
         <h2>What you get</h2>
@@ -66,7 +107,7 @@
         </ul>
         <p class="sub">Most inactive profiles see movement within 30–90 days of consistent activity.</p>
         <p>
-          <a class="cta" href="https://buy.stripe.com/3cI6oI5VKdDtasu4rW73G05" target="_blank" rel="noopener">Start for $99 →</a>
+          <a class="cta" href="YOUR_SCHEDULING_LINK" target="_blank" rel="noopener">Start for $99 →</a>
           &nbsp;<a class="cta secondary" href="#how">See how it works</a>
         </p>
       </div>
@@ -79,12 +120,13 @@
           <li>No setup fee</li>
           <li>We do the work. You get the calls.</li>
         </ul>
-        <p><a class="cta" href="https://calendly.com/sumptuousdetailing/consultation" target="_blank" rel="noopener">Book a 10-min setup</a></p>
+        <p><a class="cta" href="YOUR_SCHEDULING_LINK" target="_blank" rel="noopener">Book a 10-min setup</a></p>
         <p class="mono sub">Multi-location? Ask for volume.</p>
       </div>
     </section>
 
-    <section id="how" class="panel" style="margin-top:18px">
+    <!-- HOW IT WORKS -->
+    <section id="how" class="panel mt-18">
       <h2>How it works</h2>
       <ol>
         <li><strong>Kickoff (10 min):</strong> share GBP access + offers/services.</li>
@@ -92,16 +134,91 @@
         <li><strong>Weekly cadence:</strong> posts + photos + review replies.</li>
         <li><strong>Report:</strong> monthly summary (views, calls, site clicks).</li>
       </ol>
-      <p><a class="cta" href="https://buy.stripe.com/3cI6oI5VKdDtasu4rW73G05" target="_blank" rel="noopener">Get started</a></p>
+      <p><a class="cta" href="YOUR_SCHEDULING_LINK" target="_blank" rel="noopener">Get started</a></p>
     </section>
 
-    <section class="grid3" style="margin-top:18px">
+    <!-- WHY / WHO / GUARANTEE -->
+    <section class="grid3 mt-18">
       <div class="panel"><h2>Why this works</h2><p>Google rewards consistency. We keep your profile active so you rise where it matters—Maps.</p></div>
       <div class="panel"><h2>Who it’s for</h2><p>Trades, contractors, med spas, fitness, automotive, professional services—any local business that gets calls from Maps.</p></div>
       <div class="panel"><h2>Guarantee</h2><p>Month-to-month. If you don’t see movement after 90 days of activity, pause or cancel.</p></div>
     </section>
 
-    <section class="panel" style="margin-top:18px">
+    <!-- FORM (kept above proof image as requested) -->
+    <section id="audit" class="panel mt-18">
+      <h2>Get a quick audit</h2>
+      <!-- Formspree: create a form, then replace the action URL below. Or swap with mailto: -->
+      <form action="https://formspree.io/f/your_form_id" method="POST">
+        <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr">
+          <input name="name" placeholder="Name" required>
+          <input name="email" type="email" placeholder="Email" required>
+        </div>
+        <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr;margin-top:10px">
+          <input name="business" placeholder="Business name" required>
+          <input name="city" placeholder="City / Service area">
+        </div>
+        <button class="cta" type="submit" style="margin-top:12px">Send audit request</button>
+      </form>
+      <p class="mono sub" style="margin-top:10px">Prefer email? <a href="mailto:YOUREMAIL@example.com">YOUREMAIL@example.com</a></p>
+    </section>
+
+    <!-- PROOF IMAGE (below form) -->
+    <section id="case-study" class="panel mt-18">
+      <h2>Case study: 50+ calls in a month</h2>
+      <figure class="case">
+        <!-- Replace the src filename with your actual uploaded image -->
+        <img src="case-study-50-calls.png"
+             alt="GBP insights showing 50+ calls in one month after consistent posts, photos, and review replies."
+             loading="lazy">
+        <figcaption class="muted mono">Real client results. Consistent posts, fresh photos, and owner-voice review replies.</figcaption>
+      </figure>
+    </section>
+
+    <!-- SHORTS CAROUSEL (below proof image) -->
+    <section id="shorts" class="panel mt-18">
+      <h2>Quick wins in 30–60s</h2>
+      <div class="carousel">
+        <button class="nav prev" aria-label="Previous">‹</button>
+        <div class="track">
+          <div class="slide">
+            <div class="tap"><span>Tap to play</span></div>
+            <iframe
+              title="GBP tip 1"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              src="https://www.youtube-nocookie.com/embed/oCYc4JXwVuo?rel=0&modestbranding=1&playsinline=1"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+
+          <div class="slide">
+            <div class="tap"><span>Tap to play</span></div>
+            <iframe
+              title="GBP tip 2"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              src="https://www.youtube-nocookie.com/embed/_yt0YdiWySI?rel=0&modestbranding=1&playsinline=1"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+
+          <div class="slide">
+            <div class="tap"><span>Tap to play</span></div>
+            <iframe
+              title="GBP tip 3"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              src="https://www.youtube-nocookie.com/embed/DFf1KQV8Xso?rel=0&modestbranding=1&playsinline=1"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <button class="nav next" aria-label="Next">›</button>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="panel mt-18">
       <h2>FAQ</h2>
       <details><summary>Do you need my login?</summary><p>No. We request Manager access to your GBP via email.</p></details>
       <details><summary>What about reviews?</summary><p>We reply to new reviews in your voice with approved templates and can provide a simple review-request link.</p></details>
@@ -109,29 +226,41 @@
       <details><summary>Multi-location pricing?</summary><p>Yes—ask for volume rates. We support chains and franchises.</p></details>
     </section>
 
-    <section class="panel" style="margin-top:18px">
-      <h2>Get a quick audit</h2>
-      <!-- Formspree: create a form, then replace the action URL below. Or swap with mailto: -->
-<form action="https://hooks.zapier.com/hooks/catch/17400171/uduehfx/" method="POST">
-        <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr">
-          <input name="name" placeholder="Name" required>
-          <input name="email" type="email" placeholder="Email" required>
-        </div>
-        <input name="business" placeholder="Business name" required style="margin-top:10px;width:100%">
-        <input name="city" placeholder="City / Service area" style="margin-top:10px;width:100%">
-        <button class="cta" type="submit" style="margin-top:12px">Send audit request</button>
-      </form>
-      <p class="mono sub" style="margin-top:10px">Prefer email? <a href="mailto:burgarddar@gmail.com">burgarddar@gmail.com</a></p>
-    </section>
-
     <footer>
-      <div>© <span id="y"></span> Rankit99 All rights reserved.</div>
-      <div class="sub">Mailing address 715 Camp Perrin Rd, Lawrenceville, GA 30043</div>
-      <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+      <div>© <span id="y"></span> RankYou99. All rights reserved.</div>
+      <div class="sub">Mailing address (for CAN-SPAM): YOUR_MAILING_ADDRESS</div>
     </footer>
   </div>
+
+  <script>
+    // Year
+    document.getElementById('y').textContent=new Date().getFullYear();
+
+    // Carousel: arrows + tap-to-activate
+    document.querySelectorAll('.carousel').forEach(caro => {
+      const track = caro.querySelector('.track');
+      const prev = caro.querySelector('.prev');
+      const next = caro.querySelector('.next');
+
+      if (prev) prev.addEventListener('click', () => track.scrollBy({left:-340, behavior:'smooth'}));
+      if (next) next.addEventListener('click', () => track.scrollBy({left: 340, behavior:'smooth'}));
+
+      // Tap overlay to enable iframe interaction on mobile
+      caro.querySelectorAll('.slide .tap').forEach(tap => {
+        tap.addEventListener('click', e => {
+          const slide = e.currentTarget.closest('.slide');
+          slide.classList.add('active');
+        }, {passive:true});
+      });
+    });
+
+    // On desktop (hover + fine pointer), allow iframes immediately (hide taps)
+    const isDesktop = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    if (isDesktop) {
+      document.querySelectorAll('.slide').forEach(slide=>{
+        slide.classList.add('active');
+      });
+    }
+  </script>
 </body>
 </html>
-<script>
-  fbq('track', 'CompleteRegistration');
-</script>
