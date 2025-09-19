@@ -19,7 +19,8 @@
     .panel{border:1px solid var(--line);border-radius:16px;padding:22px;background:#0e0e0e}
     .cta{display:inline-block;padding:14px 18px;border:1px solid #fff;border-radius:12px;text-decoration:none;color:#0b0b0b;background:#fff;font-weight:700}
     .cta.secondary{background:transparent;color:#fff}
-    .cta + .cta { margin-left:10px } /* slight space between buttons */
+    .cta-stack a{display:block}
+    .cta-stack a + a{margin-top:10px} /* space under Start button */
     .hero{display:grid;gap:18px;grid-template-columns:1fr}
     @media(min-width:840px){.hero{grid-template-columns:1.2fr .8fr}}
     h2{font-size:22px;margin:16px 0 8px}
@@ -106,10 +107,10 @@
           <li><strong>Optional call tracking</strong> + simple monthly report</li>
         </ul>
         <p class="sub">Most inactive profiles see movement within 30–90 days of consistent activity.</p>
-        <p>
+        <div class="cta-stack">
           <a class="cta" href="https://buy.stripe.com/3cI6oI5VKdDtasu4rW73G05" target="_blank" rel="noopener">Start for $99 →</a>
           <a class="cta secondary" href="#how">See how it works</a>
-        </p>
+        </div>
       </div>
 
       <div class="panel">
@@ -153,14 +154,34 @@
       <details><summary>Multi-location pricing?</summary><p>Yes—ask for volume rates. We support chains and franchises.</p></details>
     </section>
 
-    <!-- CASE STUDY (under FAQ) -->
+    <!-- AUDIT FORM (now above case study) -->
+    <section id="audit" class="panel mt-18">
+      <h2>Get a quick audit</h2>
+      <!-- Zapier webhook from your snippet -->
+      <form action="https://hooks.zapier.com/hooks/catch/17400171/uduehfx/" method="POST">
+        <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr">
+          <input name="name" placeholder="Name" required>
+          <input name="email" type="email" placeholder="Email" required>
+        </div>
+        <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr;margin-top:10px">
+          <input name="business" placeholder="Business name" required>
+          <input name="city" placeholder="City">
+        </div>
+        <button class="cta" type="submit" style="margin-top:12px">Send audit request</button>
+      </form>
+      <p class="mono sub" style="margin-top:10px">Prefer email? <a href="mailto:burgarddar@gmail.com">burgarddar@gmail.com</a></p>
+    </section>
+
+    <!-- CASE STUDY (under FAQ, below form) -->
     <section id="case-study" class="panel mt-18">
       <h2>Case study: 50+ calls in a month</h2>
       <figure class="case">
-        <!-- Replace the src filename with your actual uploaded image -->
-        <img src="case-study-50-calls.png"
-             alt="GBP insights showing 50+ calls in one month after consistent posts, photos, and review replies."
-             loading="lazy">
+        <img
+          src="https://sumptuousdetailing.com/wp-content/uploads/2025/09/Screenshot-2025-09-07-at-100136-AM-scaled.png"
+          alt="GBP insights showing 50+ calls in one month after consistent posts, photos, and review replies."
+          loading="lazy"
+          referrerpolicy="no-referrer"
+          style="max-width:100%;height:auto">
         <figcaption class="muted mono">Real client results. Consistent posts, fresh photos, and owner-voice review replies.</figcaption>
       </figure>
     </section>
@@ -206,24 +227,6 @@
         </div>
         <button class="nav next" aria-label="Next">›</button>
       </div>
-    </section>
-
-    <!-- AUDIT FORM -->
-    <section id="audit" class="panel mt-18">
-      <h2>Get a quick audit</h2>
-      <!-- Zapier webhook from your snippet -->
-      <form action="https://hooks.zapier.com/hooks/catch/17400171/uduehfx/" method="POST">
-        <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr">
-          <input name="name" placeholder="Name" required>
-          <input name="email" type="email" placeholder="Email" required>
-        </div>
-        <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr;margin-top:10px">
-          <input name="business" placeholder="Business name" required>
-          <input name="city" placeholder="City">
-        </div>
-        <button class="cta" type="submit" style="margin-top:12px">Send audit request</button>
-      </form>
-      <p class="mono sub" style="margin-top:10px">Prefer email? <a href="mailto:burgarddar@gmail.com">burgarddar@gmail.com</a></p>
     </section>
 
     <footer>
