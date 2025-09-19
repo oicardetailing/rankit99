@@ -19,6 +19,7 @@
     .panel{border:1px solid var(--line);border-radius:16px;padding:22px;background:#0e0e0e}
     .cta{display:inline-block;padding:14px 18px;border:1px solid #fff;border-radius:12px;text-decoration:none;color:#0b0b0b;background:#fff;font-weight:700}
     .cta.secondary{background:transparent;color:#fff}
+    .cta + .cta { margin-left:10px } /* slight space between buttons */
     .hero{display:grid;gap:18px;grid-template-columns:1fr}
     @media(min-width:840px){.hero{grid-template-columns:1.2fr .8fr}}
     h2{font-size:22px;margin:16px 0 8px}
@@ -64,12 +65,11 @@
 
     .carousel .nav{
       position:absolute;top:50%;transform:translateY(-50%);
-      border:1px solid var(--line);background:#0e0e0e;color:var(--fg);
+      border:1px solid var(--line);background:#0e0e0e;color:#fff;
       border-radius:999px;width:36px;height:36px;display:none;align-items:center;justify-content:center;cursor:pointer
     }
     @media(min-width:920px){.carousel .nav{display:flex}.carousel .prev{left:-8px}.carousel .next{right:-8px}}
 
-    /* Spacing helpers */
     .mt-18{margin-top:18px}
   </style>
 
@@ -107,8 +107,8 @@
         </ul>
         <p class="sub">Most inactive profiles see movement within 30–90 days of consistent activity.</p>
         <p>
-          <a class="cta" href="YOUR_SCHEDULING_LINK" target="_blank" rel="noopener">Start for $99 →</a>
-          &nbsp;<a class="cta secondary" href="#how">See how it works</a>
+          <a class="cta" href="https://buy.stripe.com/3cI6oI5VKdDtasu4rW73G05" target="_blank" rel="noopener">Start for $99 →</a>
+          <a class="cta secondary" href="#how">See how it works</a>
         </p>
       </div>
 
@@ -120,7 +120,7 @@
           <li>No setup fee</li>
           <li>We do the work. You get the calls.</li>
         </ul>
-        <p><a class="cta" href="YOUR_SCHEDULING_LINK" target="_blank" rel="noopener">Book a 10-min setup</a></p>
+        <p><a class="cta" href="https://calendly.com/sumptuousdetailing/consultation" target="_blank" rel="noopener">Book a 10-min setup</a></p>
         <p class="mono sub">Multi-location? Ask for volume.</p>
       </div>
     </section>
@@ -134,7 +134,7 @@
         <li><strong>Weekly cadence:</strong> posts + photos + review replies.</li>
         <li><strong>Report:</strong> monthly summary (views, calls, site clicks).</li>
       </ol>
-      <p><a class="cta" href="YOUR_SCHEDULING_LINK" target="_blank" rel="noopener">Get started</a></p>
+      <p><a class="cta" href="https://buy.stripe.com/3cI6oI5VKdDtasu4rW73G05" target="_blank" rel="noopener">Get started</a></p>
     </section>
 
     <!-- WHY / WHO / GUARANTEE -->
@@ -144,25 +144,16 @@
       <div class="panel"><h2>Guarantee</h2><p>Month-to-month. If you don’t see movement after 90 days of activity, pause or cancel.</p></div>
     </section>
 
-    <!-- FORM (kept above proof image as requested) -->
-    <section id="audit" class="panel mt-18">
-      <h2>Get a quick audit</h2>
-      <!-- Formspree: create a form, then replace the action URL below. Or swap with mailto: -->
-      <form action="https://formspree.io/f/your_form_id" method="POST">
-        <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr">
-          <input name="name" placeholder="Name" required>
-          <input name="email" type="email" placeholder="Email" required>
-        </div>
-        <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr;margin-top:10px">
-          <input name="business" placeholder="Business name" required>
-          <input name="city" placeholder="City / Service area">
-        </div>
-        <button class="cta" type="submit" style="margin-top:12px">Send audit request</button>
-      </form>
-      <p class="mono sub" style="margin-top:10px">Prefer email? <a href="mailto:YOUREMAIL@example.com">YOUREMAIL@example.com</a></p>
+    <!-- FAQ -->
+    <section class="panel mt-18">
+      <h2>FAQ</h2>
+      <details><summary>Do you need my login?</summary><p>No. We request Manager access to your GBP via email.</p></details>
+      <details><summary>What about reviews?</summary><p>We reply to new reviews in your voice with approved templates and can provide a simple review-request link.</p></details>
+      <details><summary>Do you run ads?</summary><p>No—this is organic profile management. No ad spend.</p></details>
+      <details><summary>Multi-location pricing?</summary><p>Yes—ask for volume rates. We support chains and franchises.</p></details>
     </section>
 
-    <!-- PROOF IMAGE (below form) -->
+    <!-- CASE STUDY (under FAQ) -->
     <section id="case-study" class="panel mt-18">
       <h2>Case study: 50+ calls in a month</h2>
       <figure class="case">
@@ -174,7 +165,7 @@
       </figure>
     </section>
 
-    <!-- SHORTS CAROUSEL (below proof image) -->
+    <!-- SHORTS CAROUSEL (under FAQ, below case study) -->
     <section id="shorts" class="panel mt-18">
       <h2>Quick wins in 30–60s</h2>
       <div class="carousel">
@@ -217,18 +208,27 @@
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="panel mt-18">
-      <h2>FAQ</h2>
-      <details><summary>Do you need my login?</summary><p>No. We request Manager access to your GBP via email.</p></details>
-      <details><summary>What about reviews?</summary><p>We reply to new reviews in your voice with approved templates and can provide a simple review-request link.</p></details>
-      <details><summary>Do you run ads?</summary><p>No—this is organic profile management. No ad spend.</p></details>
-      <details><summary>Multi-location pricing?</summary><p>Yes—ask for volume rates. We support chains and franchises.</p></details>
+    <!-- AUDIT FORM -->
+    <section id="audit" class="panel mt-18">
+      <h2>Get a quick audit</h2>
+      <!-- Zapier webhook from your snippet -->
+      <form action="https://hooks.zapier.com/hooks/catch/17400171/uduehfx/" method="POST">
+        <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr">
+          <input name="name" placeholder="Name" required>
+          <input name="email" type="email" placeholder="Email" required>
+        </div>
+        <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr;margin-top:10px">
+          <input name="business" placeholder="Business name" required>
+          <input name="city" placeholder="City">
+        </div>
+        <button class="cta" type="submit" style="margin-top:12px">Send audit request</button>
+      </form>
+      <p class="mono sub" style="margin-top:10px">Prefer email? <a href="mailto:burgarddar@gmail.com">burgarddar@gmail.com</a></p>
     </section>
 
     <footer>
       <div>© <span id="y"></span> RankYou99. All rights reserved.</div>
-      <div class="sub">Mailing address (for CAN-SPAM): YOUR_MAILING_ADDRESS</div>
+      <div class="sub">Mailing address 715 Camp Perrin Rd, Lawrenceville, GA 30043</div>
     </footer>
   </div>
 
@@ -261,6 +261,11 @@
         slide.classList.add('active');
       });
     }
+  </script>
+
+  <!-- Your pixel event from snippet -->
+  <script>
+    try { fbq && fbq('track', 'CompleteRegistration'); } catch(e) {}
   </script>
 </body>
 </html>
