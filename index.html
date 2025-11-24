@@ -98,7 +98,10 @@
       <div class="sub">
         Rankit99 builds and maintains a full stack for local service businesses:
         Google Business Profile, a conversion-focused site, and call/text automations that
-        turn strangers from Maps into booked appointments — without you chasing anyone.
+        turn strangers from Maps into booked appointments.
+      </div>
+      <div class="sub" style="margin-top:6px;">
+        The target is simple: more qualified bookings per month, fewer no-shows, and less chasing.
       </div>
     </header>
 
@@ -138,7 +141,7 @@
         </div>
       </div>
 
-      <!-- RIGHT: ENGAGEMENT MODEL -->
+      <!-- RIGHT: ENGAGEMENT MODEL (HIGH LEVEL) -->
       <div class="panel">
         <h2>The Rankit99 engagement</h2>
         <p>
@@ -151,7 +154,7 @@
           <li><strong>Owner Conversations:</strong> short monthly review call (Zoom) and, for East Coast, in-person optional.</li>
         </ul>
         <p class="sub">
-          Pricing is flat setup + simple monthly retainer, scoped to your locations and services.
+          Pricing is a flat system build + a simple monthly retainer, scoped to your locations and services.
           No long-term contracts. We stay if the system is clearly paying for itself.
         </p>
         <p>
@@ -163,9 +166,39 @@
       </div>
     </section>
 
+    <!-- OFFER BLOCK: THE SYSTEM -->
+    <section id="offer" class="panel mt-18">
+      <h2>The Rankit99 System</h2>
+      <p>
+        This is not a menu of services. It’s a single, end-to-end system built for owner-operators who want
+        their phones and calendars handled.
+      </p>
+      <ul>
+        <li>
+          <strong>One-time System Build</strong><br/>
+          We architect and implement your full local growth stack: Google Business Profile, site or landing pages,
+          call and text routing, booking flows, reminders, and basic reporting.
+        </li>
+        <li>
+          <strong>Ongoing Management &amp; Optimization</strong><br/>
+          We keep the system tuned: profile activity, content, review replies, copy adjustments,
+          automations, and booking logic as your offers and seasons shift.
+        </li>
+        <li>
+          <strong>Direct Operator Access</strong><br/>
+          You’re not going through layers of account managers. You talk directly to the person who designed
+          and operates your system.
+        </li>
+      </ul>
+      <p class="sub">
+        Most clients come to us with scattered tools and leaking leads; they leave with a single system that
+        adds booked appointments each month without extra ad spend.
+      </p>
+    </section>
+
     <!-- SYSTEM OVERVIEW -->
     <section class="panel mt-18" id="system">
-      <h2>The Rankit99 local system in practice</h2>
+      <h2>How the local system actually works</h2>
       <p>
         This isn’t an “SEO plan” or a random website. It’s a closed loop:
         people search, they see you, they click, they book — and the follow-ups keep them coming back.
@@ -182,7 +215,7 @@
 
     <!-- HOW IT WORKS -->
     <section id="how" class="panel mt-18">
-      <h2>How the engagement works</h2>
+      <h2>How the engagement runs</h2>
       <ol>
         <li>
           <strong>1. Quick audit (10–15 min)</strong><br/>
@@ -198,7 +231,7 @@
           and basic reporting.
         </li>
         <li>
-          <strong>4. Launch & test</strong><br/>
+          <strong>4. Launch &amp; test</strong><br/>
           We quietly launch, test the flows (call → text → booking), and refine any friction in the funnel.
         </li>
         <li>
@@ -230,10 +263,10 @@
           Owner-operators and lean teams in:
         </p>
         <ul>
-          <li>Massage & bodywork</li>
-          <li>Automotive & detailing</li>
-          <li>Med spa & beauty</li>
-          <li>Trades & home services</li>
+          <li>Massage &amp; bodywork</li>
+          <li>Automotive &amp; detailing</li>
+          <li>Med spa &amp; beauty</li>
+          <li>Trades &amp; home services</li>
           <li>Fitness, coaching, and similar</li>
         </ul>
         <p class="sub">If calls and bookings matter more than “likes,” you’re who this was built for.</p>
@@ -242,7 +275,7 @@
         <h2>What we manage each month</h2>
         <ul>
           <li>Google Business Profile activity and optimization.</li>
-          <li>Site and landing page adjustments for offers & seasons.</li>
+          <li>Site and landing page adjustments for offers &amp; seasons.</li>
           <li>OpenPhone flows and SMS automations kept healthy.</li>
           <li>Booking logic and reminders monitored and tuned.</li>
           <li>Simple, clear reporting — not vanity metrics.</li>
@@ -412,17 +445,17 @@
 
       // Tap overlay to enable iframe interaction on mobile
       caro.querySelectorAll('.slide .tap').forEach(tap => {
-        tap.addEventListener('click', e => {
-          const slide = e.currentTarget.closest('.slide');
+        tap.addEventListener('click', function(e){
+          var slide = e.currentTarget.closest('.slide');
           slide.classList.add('active');
         }, {passive:true});
       });
     });
 
     // On desktop (hover + fine pointer), allow iframes immediately (hide taps)
-    const isDesktop = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    var isDesktop = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
     if (isDesktop) {
-      document.querySelectorAll('.slide').forEach(slide=>{
+      document.querySelectorAll('.slide').forEach(function(slide){
         slide.classList.add('active');
       });
     }
