@@ -3,43 +3,64 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Local Booking Systems & Google Maps Growth – Rankit99</title>
-  <meta name="description" content="Rankit99 builds and maintains full-stack local growth systems: Google Business Profile, high-converting site, call/text automations, and booking flows so your calendar fills itself."/>
+  <title>GBP Autopilot for Local Service Businesses – Rankit99</title>
+  <meta name="description" content="Rankit99 runs Google Business Profile as a performance channel: keyword-aligned optimization, consistent posting, review engine, and clean reporting that drives calls from Maps."/>
   <link rel="canonical" href="https://www.rankit99.com/"/>
 
   <style>
-    :root{--bg:#0b0b0b;--fg:#f5f5f5;--muted:#9aa0a6;--line:#1a1a1a}
+    :root{--bg:#0b0b0b;--fg:#f5f5f5;--muted:#9aa0a6;--line:#1a1a1a;--card:#0e0e0e}
     *{box-sizing:border-box}html,body{margin:0;height:100%}
-    body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial; background:var(--bg); color:var(--fg); line-height:1.6}
-    .wrap{max-width:940px;margin:0 auto;padding:48px 20px}
-    header{padding:24px 0 12px;border-bottom:1px solid var(--line);margin-bottom:28px}
-    h1{font-size:34px;line-height:1.2;margin:8px 0 4px;font-weight:800;letter-spacing:.2px}
+    body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial;background:var(--bg);color:var(--fg);line-height:1.6}
+    .wrap{max-width:980px;margin:0 auto;padding:48px 20px}
+    header{padding:24px 0 14px;border-bottom:1px solid var(--line);margin-bottom:28px}
+    h1{font-size:34px;line-height:1.15;margin:10px 0 6px;font-weight:900;letter-spacing:.2px}
     .sub{color:var(--muted);font-size:15px}
     .badge{border:1px solid var(--line);padding:6px 10px;border-radius:999px;display:inline-block;font-size:12px;color:var(--muted)}
-    .panel{border:1px solid var(--line);border-radius:16px;padding:22px;background:#0e0e0e}
-    .cta{display:inline-block;padding:14px 18px;border:1px solid #fff;border-radius:12px;text-decoration:none;color:#0b0b0b;background:#fff;font-weight:700}
-    .cta.secondary{background:transparent;color:#fff}
+    .panel{border:1px solid var(--line);border-radius:16px;padding:22px;background:var(--card)}
+    .cta{display:inline-block;padding:14px 18px;border:1px solid #fff;border-radius:12px;text-decoration:none;color:#0b0b0b;background:#fff;font-weight:800}
+    .cta.secondary{background:transparent;color:#fff;border-color:var(--line)}
     .cta-stack{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
-    .cta-stack a{display:inline-block;width:auto}
     .hero{display:grid;gap:18px;grid-template-columns:1fr}
-    @media(min-width:840px){.hero{grid-template-columns:1.2fr .8fr}}
+    @media(min-width:900px){.hero{grid-template-columns:1.25fr .75fr}}
     h2{font-size:22px;margin:16px 0 8px}
-    ul{padding-left:18px;margin:8px 0} li{margin:6px 0}
-    ol{padding-left:18px;margin:8px 0}
-    details{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#0f0f0f}
-    summary{cursor:pointer;font-weight:600}
+    p{margin:10px 0}
+    ul,ol{padding-left:18px;margin:8px 0} li{margin:6px 0}
+    details{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#0f0f0f;margin-top:10px}
+    summary{cursor:pointer;font-weight:700}
     footer{margin-top:48px;padding:24px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
-    input,button{font:inherit}
-    input{padding:12px;border:1px solid var(--line);border-radius:10px;background:#0f0f0f;color:#fff;width:100%}
+    input,button,select{font:inherit}
+    input,select{
+      padding:12px;border:1px solid var(--line);border-radius:10px;background:#0f0f0f;color:#fff;width:100%;
+      outline:none;
+    }
+    input:focus,select:focus{border-color:#2a2a2a}
     .grid3{display:grid;gap:14px}
-    @media(min-width:840px){.grid3{grid-template-columns:1fr 1fr 1fr}}
+    @media(min-width:900px){.grid3{grid-template-columns:1fr 1fr 1fr}}
+    .grid2{display:grid;gap:14px}
+    @media(min-width:900px){.grid2{grid-template-columns:1fr 1fr}}
     .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+    .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
+    .pill{border-radius:999px;border:1px solid var(--line);padding:4px 10px;font-size:12px;color:var(--muted)}
+    .mt-18{margin-top:18px}
 
-    /* --- Case study image --- */
+    /* Proof images */
     .case img{width:100%;height:auto;border-radius:16px;border:1px solid var(--line);display:block}
-    .case figcaption{margin-top:8px}
+    .case figcaption{margin-top:8px;color:var(--muted)}
+    .kpi{display:grid;gap:10px;margin-top:10px}
+    @media(min-width:900px){.kpi{grid-template-columns:1fr 1fr 1fr}}
+    .kpi .box{border:1px solid var(--line);border-radius:14px;padding:14px;background:#0f0f0f}
+    .kpi .big{font-size:18px;font-weight:900}
+    .kpi .small{color:var(--muted);font-size:13px;margin-top:4px}
 
-    /* --- Shorts carousel (mobile-first, tap-to-activate) --- */
+    /* Pricing box */
+    .price{border:1px solid #2a2a2a;background:#0f0f0f}
+    .price .row{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px solid var(--line)}
+    .price .row:first-child{border-top:none;padding-top:0}
+    .price .name{font-weight:900}
+    .price .val{font-weight:900;white-space:nowrap}
+    .note{color:var(--muted);font-size:13px}
+
+    /* Shorts carousel (mobile-first, tap-to-activate) */
     .carousel{position:relative;margin-top:18px}
     .carousel .track{
       display:flex;gap:12px;overflow-x:auto;padding:6px 2px 12px;
@@ -52,29 +73,21 @@
       border:1px solid var(--line);border-radius:16px;background:#000;
       scroll-snap-align:center;position:relative;overflow:hidden;
     }
-    .slide iframe{
-      position:absolute;inset:0;width:100%;height:100%;border:0;
-      pointer-events:none;
-    }
+    .slide iframe{position:absolute;inset:0;width:100%;height:100%;border:0;pointer-events:none}
     .slide .tap{
       position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
       background:linear-gradient(0deg, rgba(0,0,0,.45), rgba(0,0,0,.45));
-      font-weight:700;border-radius:16px;user-select:none;cursor:pointer;
+      font-weight:800;border-radius:16px;user-select:none;cursor:pointer
     }
     .slide .tap span{background:#fff;color:#000;padding:8px 12px;border-radius:999px;font-size:13px}
     .slide.active iframe{pointer-events:auto}
     .slide.active .tap{display:none}
-
     .carousel .nav{
       position:absolute;top:50%;transform:translateY(-50%);
       border:1px solid var(--line);background:#0e0e0e;color:#fff;
       border-radius:999px;width:36px;height:36px;display:none;align-items:center;justify-content:center;cursor:pointer
     }
-    @media(min-width:920px){.carousel .nav{display:flex}.carousel .prev{left:-8px}.carousel .next{right:-8px}}
-
-    .mt-18{margin-top:18px}
-    .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
-    .pill{border-radius:999px;border:1px solid var(--line);padding:4px 10px;font-size:12px;color:var(--muted)}
+    @media(min-width:980px){.carousel .nav{display:flex}.carousel .prev{left:-8px}.carousel .next{right:-8px}}
   </style>
 
   <script type="application/ld+json">
@@ -83,373 +96,327 @@
     "@type":"ProfessionalService",
     "name":"Rankit99",
     "url":"https://www.rankit99.com/",
-    "description":"Rankit99 designs and maintains full-stack local growth systems: Google Business Profile optimization, conversion-focused websites, and automated call/text booking flows for local service businesses.",
+    "description":"Rankit99 runs Google Business Profile as a performance channel: keyword-aligned optimization, consistent posting, review engine, and reporting built to drive calls from Maps.",
     "areaServed":"United States",
     "priceRange":"$$",
     "telephone":"+1-737-245-6877"
   }
   </script>
 </head>
+
 <body>
   <div class="wrap">
     <header>
-      <div class="badge">Local Growth Systems • Maps, Site & Booking Automation</div>
-      <h1>Your booking system, engineered end-to-end.</h1>
+      <div class="badge">Google Business Profile • Maps Calls • Simple Systems</div>
+      <h1>More calls from Google Maps — without rebuilding your business.</h1>
       <div class="sub">
-        Rankit99 builds and maintains a full stack for local service businesses:
-        Google Business Profile, a conversion-focused site, and call/text automations that
-        turn strangers from Maps into booked appointments.
+        Rankit99 runs your Google Business Profile like a performance channel: keyword-aligned optimization, consistent posting,
+        review momentum, and clear reporting. Built for owner-operators who want more qualified calls and less guesswork.
       </div>
       <div class="sub" style="margin-top:6px;">
-        The target is simple: more qualified bookings per month, fewer no-shows, and less chasing.
+        Start with GBP. Add LSA or automation later if/when it makes sense.
       </div>
     </header>
 
     <!-- HERO -->
     <section class="hero">
-      <!-- LEFT: WHAT WE BUILD -->
+      <!-- LEFT -->
       <div class="panel">
-        <h2>One system, three layers</h2>
-        <p class="sub">We don’t sell “posts” or random tweaks. We design the operating system that feeds your calendar.</p>
+        <h2>The GBP Autopilot (Core)</h2>
+        <p class="sub">If your listing already exists, good. We tune it hard, then keep it active with a controlled system.</p>
+
         <ul>
-          <li>
-            <strong>Maps Engine (Google Business Profile)</strong><br/>
-            Categories, services, Q&amp;A, offers, posts, photos, and review replies tuned for both
-            ranking signals and conversions from Maps.
-          </li>
-          <li>
-            <strong>Conversion Site</strong><br/>
-            Slim, fast pages that match your offers, answer objections, and push people into calls or bookings
-            instead of scrolling and bouncing.
-          </li>
-          <li>
-            <strong>Booking &amp; Automation Layer</strong><br/>
-            OpenPhone setup, missed-call text-back, SMS flows, Acuity (or similar) booking flows, reminders,
-            follow-ups, and simple reporting — all wired together.
-          </li>
+          <li><strong>Keyword + service alignment</strong><br/>Services, copy, categories, attributes, Q&amp;A, and offers aligned to what people actually search.</li>
+          <li><strong>Consistent activity (without you thinking about it)</strong><br/>Automated posts + structured templates. We monitor, adjust, and keep it clean.</li>
+          <li><strong>Review engine</strong><br/>A simple script your team can follow + templates that increase review volume without awkwardness.</li>
+          <li><strong>Review responses (brand-safe)</strong><br/>Fast replies that sound human and protect your positioning.</li>
+          <li><strong>Reporting that matters</strong><br/>Map-pack movement + searches + calls/actions. No vanity dashboards.</li>
         </ul>
+
         <div class="pill-row">
-          <div class="pill">Google Business Profile</div>
-          <div class="pill">Site & landing pages</div>
-          <div class="pill">OpenPhone & SMS flows</div>
-          <div class="pill">Acuity / calendar booking</div>
-          <div class="pill">Review engine</div>
+          <div class="pill">HVAC</div>
+          <div class="pill">Plumbing</div>
+          <div class="pill">Home services</div>
+          <div class="pill">Local operators</div>
         </div>
-        <div class="cta-stack">
-          <a class="cta" href="#audit">Request a system audit →</a>
-          <a class="cta secondary" href="#how">See the engagement model</a>
+
+        <div class="cta-stack" style="margin-top:12px">
+          <a class="cta" href="#audit">Request a GBP audit →</a>
+          <a class="cta secondary" href="#proof">See proof</a>
         </div>
+
+        <p class="note" style="margin-top:12px">
+          You keep your current website and phone system. We start with the highest-leverage layer first.
+        </p>
       </div>
 
-      <!-- RIGHT: ENGAGEMENT MODEL (HIGH LEVEL) -->
-      <div class="panel">
-        <h2>The Rankit99 engagement</h2>
-        <p>
-          One package. One setup. One retainer.
-          We build the system, then we run it with you.
+      <!-- RIGHT: PRICING + ADD-ONS -->
+      <div class="panel price">
+        <h2>Pricing (starting at)</h2>
+
+        <div class="row">
+          <div>
+            <div class="name">GBP Autopilot (Core)</div>
+            <div class="note">Optimization install + ongoing management</div>
+          </div>
+          <div class="val">$750 install<br/>$500/mo</div>
+        </div>
+
+        <div class="row">
+          <div>
+            <div class="name">LSA Setup (optional)</div>
+            <div class="note">Profile build + categories + intake alignment</div>
+          </div>
+          <div class="val">+$500 install</div>
+        </div>
+
+        <div class="row">
+          <div>
+            <div class="name">LSA Management (optional)</div>
+            <div class="note">Ongoing tuning + monitoring</div>
+          </div>
+          <div class="val">+$300/mo</div>
+        </div>
+
+        <p class="note" style="margin-top:12px">
+          Multi-location and heavy competition markets price higher. You’ll get an exact quote after the audit.
         </p>
-        <ul>
-          <li><strong>System Build:</strong> full stack design and implementation (Maps, site, call/text flows, booking).</li>
-          <li><strong>Ongoing Management:</strong> optimization, content, and maintenance so it keeps compounding.</li>
-          <li><strong>Owner Conversations:</strong> short monthly review call (Zoom) and, for East Coast, in-person optional.</li>
-        </ul>
-        <p class="sub">
-          Pricing is a flat system build + a simple monthly retainer, scoped to your locations and services.
-          No long-term contracts. We stay if the system is clearly paying for itself.
+
+        <p style="margin-top:14px">
+          <a class="cta" href="#audit">Get the audit</a>
         </p>
-        <p>
-          <a class="cta" href="https://calendly.com/sumptuousdetailing/consultation" target="_blank" rel="noopener">
-            Book a 10-minute intro
-          </a>
+
+        <p class="mono sub" style="margin-top:10px">
+          No long contracts. We stay if performance is clear.
         </p>
-        <p class="mono sub">Already running traffic or have a site? We adapt to what you have — we don’t rebuild for ego.</p>
       </div>
     </section>
 
-    <!-- OFFER BLOCK: THE SYSTEM -->
-    <section id="offer" class="panel mt-18">
-      <h2>The Rankit99 System</h2>
-      <p>
-        This is not a menu of services. It’s a single, end-to-end system built for owner-operators who want
-        their phones and calendars handled.
-      </p>
-      <ul>
-        <li>
-          <strong>One-time System Build</strong><br/>
-          We architect and implement your full local growth stack: Google Business Profile, site or landing pages,
-          call and text routing, booking flows, reminders, and basic reporting.
-        </li>
-        <li>
-          <strong>Ongoing Management &amp; Optimization</strong><br/>
-          We keep the system tuned: profile activity, content, review replies, copy adjustments,
-          automations, and booking logic as your offers and seasons shift.
-        </li>
-        <li>
-          <strong>Direct Operator Access</strong><br/>
-          You’re not going through layers of account managers. You talk directly to the person who designed
-          and operates your system.
-        </li>
-      </ul>
+    <!-- WHAT ELSE WE DO (BOX) -->
+    <section class="panel mt-18" id="addons">
+      <h2>Optional add-ons (only after Core is stable)</h2>
       <p class="sub">
-        Most clients come to us with scattered tools and leaking leads; they leave with a single system that
-        adds booked appointments each month without extra ad spend.
+        These are not required to start. We add them once your GBP is tight and you want more conversion lift.
       </p>
-    </section>
-
-    <!-- SYSTEM OVERVIEW -->
-    <section class="panel mt-18" id="system">
-      <h2>How the local system actually works</h2>
-      <p>
-        This isn’t an “SEO plan” or a random website. It’s a closed loop:
-        people search, they see you, they click, they book — and the follow-ups keep them coming back.
-      </p>
-      <ol>
-        <li><strong>Search:</strong> Your Google Business Profile shows up for the right search terms in your service area.</li>
-        <li><strong>Decision:</strong> Your photos, reviews, offers, and FAQs make it obvious you’re the safe choice.</li>
-        <li><strong>Action:</strong> The call or click routes into a clean phone tree, SMS flow, or booking page.</li>
-        <li><strong>Confirmation:</strong> Automated confirmations and reminders reduce no-shows and last-minute chaos.</li>
-        <li><strong>Retention:</strong> Simple review requests and win-back messages compound your reputation and demand.</li>
-      </ol>
-      <p class="sub">You keep doing the work you’re excellent at. We keep the system tuned so more of the right people show up.</p>
+      <div class="grid2">
+        <div class="panel" style="background:#0f0f0f">
+          <h2 style="margin-top:0">Missed-call capture + follow-ups</h2>
+          <p class="sub">
+            If your business misses calls, you lose jobs. We can install missed-call text-back + follow-ups once messaging is compliant.
+          </p>
+          <ul>
+            <li>Missed call → instant response</li>
+            <li>Simple intake (job type + zip + photos)</li>
+            <li>2–3 follow-ups until reply</li>
+          </ul>
+          <p class="note">Best as Phase 2. Not needed to start GBP gains.</p>
+        </div>
+        <div class="panel" style="background:#0f0f0f">
+          <h2 style="margin-top:0">Landing page (if your site is weak)</h2>
+          <p class="sub">
+            If your website is slow/confusing, we build one clean page that answers objections and pushes calls.
+          </p>
+          <ul>
+            <li>Offer clarity + trust blocks</li>
+            <li>Service area + FAQs</li>
+            <li>Call-first design</li>
+          </ul>
+          <p class="note">Only if it’s currently costing you conversions.</p>
+        </div>
+      </div>
     </section>
 
     <!-- HOW IT WORKS -->
-    <section id="how" class="panel mt-18">
-      <h2>How the engagement runs</h2>
+    <section class="panel mt-18" id="how">
+      <h2>How it runs</h2>
       <ol>
-        <li>
-          <strong>1. Quick audit (10–15 min)</strong><br/>
-          We review your current Google profile, site, and booking/phone flow, then map where leads are leaking.
-        </li>
-        <li>
-          <strong>2. System blueprint</strong><br/>
-          You get a simple diagram of your future system: how Maps, site, calls, texts, and bookings will connect.
-        </li>
-        <li>
-          <strong>3. Build phase</strong><br/>
-          We implement the stack: GBP optimization, site or landing build, OpenPhone logic, SMS flows, calendar,
-          and basic reporting.
-        </li>
-        <li>
-          <strong>4. Launch &amp; test</strong><br/>
-          We quietly launch, test the flows (call → text → booking), and refine any friction in the funnel.
-        </li>
-        <li>
-          <strong>5. Ongoing optimization</strong><br/>
-          Monthly tuning: posts, photos, review replies, copy tweaks, split-testing offers, and system maintenance.
-        </li>
+        <li><strong>Audit (10–15 min)</strong><br/>We review your GBP and identify what’s limiting calls (structure, relevance, proof, activity, reviews).</li>
+        <li><strong>Install (week 1)</strong><br/>We implement the optimization + automation templates + review engine.</li>
+        <li><strong>Operate (ongoing)</strong><br/>We keep it clean: posting cadence, copy adjustments, review replies, and monthly reporting.</li>
       </ol>
-      <p>
-        <a class="cta" href="#audit">Start with a quick audit</a>
-      </p>
-      <p class="mono sub">No agency fluff. You’re talking directly with the person designing and operating your system.</p>
+      <p class="sub">This is built to be low-friction for you. We do the work. You approve the basics. Your team runs the review script.</p>
+      <p><a class="cta" href="#audit">Request the audit</a></p>
     </section>
 
-    <!-- WHY / WHO / WHAT'S INCLUDED MONTHLY -->
-    <section class="grid3 mt-18">
-      <div class="panel">
-        <h2>Why this works</h2>
-        <p>
-          Google rewards consistent, structured activity. But results come from more than “being active” —
-          they come from aligning your profile, site, and phone flows with what real customers are doing.
-        </p>
-        <p class="sub">
-          Rankit99 sits at the intersection of local SEO, conversion design, and operations — not just one channel.
-        </p>
+    <!-- PROOF -->
+    <section id="proof" class="panel mt-18">
+      <h2>Proof (real profile data)</h2>
+      <p class="sub">
+        GBP results aren’t one magic tweak. They come from tight structure + consistent activity + review momentum.
+        Here are real profile snapshots from a systemized approach.
+      </p>
+
+      <div class="kpi">
+        <div class="box">
+          <div class="big">50+ calls / month</div>
+          <div class="small">From Maps activity + profile tuning</div>
+        </div>
+        <div class="box">
+          <div class="big">High review volume</div>
+          <div class="small">Review engine that compounds trust</div>
+        </div>
+        <div class="box">
+          <div class="big">8,000+ views</div>
+          <div class="small">Sustained visibility signals</div>
+        </div>
       </div>
-      <div class="panel">
-        <h2>Who this is for</h2>
-        <p>
-          Owner-operators and lean teams in:
-        </p>
-        <ul>
-          <li>Massage &amp; bodywork</li>
-          <li>Automotive &amp; detailing</li>
-          <li>Med spa &amp; beauty</li>
-          <li>Trades &amp; home services</li>
-          <li>Fitness, coaching, and similar</li>
-        </ul>
-        <p class="sub">If calls and bookings matter more than “likes,” you’re who this was built for.</p>
-      </div>
-      <div class="panel">
-        <h2>What we manage each month</h2>
-        <ul>
-          <li>Google Business Profile activity and optimization.</li>
-          <li>Site and landing page adjustments for offers &amp; seasons.</li>
-          <li>OpenPhone flows and SMS automations kept healthy.</li>
-          <li>Booking logic and reminders monitored and tuned.</li>
-          <li>Simple, clear reporting — not vanity metrics.</li>
-        </ul>
-        <p class="sub">The goal is simple: more of the right people booked, with less friction for you.</p>
+
+      <figure class="case" style="margin-top:18px">
+        <img
+          src="https://sumptuousdetailing.com/wp-content/uploads/2025/09/Screenshot-2025-09-07-at-100136-AM-scaled.png"
+          alt="GBP insights showing over 50 calls in one month."
+          loading="lazy"
+          referrerpolicy="no-referrer">
+        <figcaption class="mono">Example: 50+ calls in a month from Google Maps after systemized GBP management.</figcaption>
+      </figure>
+
+      <figure class="case" style="margin-top:18px">
+        <img
+          src="https://sumptuousdetailing.com/wp-content/uploads/2025/12/IMG_3617.PNG"
+          alt="Google Business Profile showing high review count."
+          loading="lazy"
+          referrerpolicy="no-referrer">
+        <figcaption class="mono">Review volume: consistent proof + conversion leverage.</figcaption>
+      </figure>
+
+      <figure class="case" style="margin-top:18px">
+        <img
+          src="https://sumptuousdetailing.com/wp-content/uploads/2025/12/IMG_3618.PNG"
+          alt="Google Business Profile interactions showing 1,000+ engagements and 8,000 profile views."
+          loading="lazy"
+          referrerpolicy="no-referrer">
+        <figcaption class="mono">Engagement and visibility: sustained signals, not a one-time spike.</figcaption>
+      </figure>
+    </section>
+
+    <!-- CASE: OPERATOR CRED -->
+    <section class="panel mt-18">
+      <h2>Operator-built</h2>
+      <p>
+        This system is not theory. It’s the same approach used to keep a local service business generating bookings while the operator was traveling.
+        The point: build a system that holds up even when you’re not “on it” every day.
+      </p>
+      <div class="grid3">
+        <div class="panel" style="background:#0f0f0f">
+          <h2 style="margin-top:0">1) Visibility</h2>
+          <p class="sub">Ranking signals and conversion signals aligned.</p>
+        </div>
+        <div class="panel" style="background:#0f0f0f">
+          <h2 style="margin-top:0">2) Proof</h2>
+          <p class="sub">Reviews, photos, offers, and answers that remove doubt.</p>
+        </div>
+        <div class="panel" style="background:#0f0f0f">
+          <h2 style="margin-top:0">3) Cadence</h2>
+          <p class="sub">Consistent activity without you managing it.</p>
+        </div>
       </div>
     </section>
 
     <!-- FAQ -->
     <section class="panel mt-18">
       <h2>FAQ</h2>
+
       <details>
-        <summary>Do you only manage Google Business Profiles?</summary>
+        <summary>We already have a GBP. What do you actually change?</summary>
         <p>
-          No. GBP is one layer. The real value is in how your profile, site, phone system, texts, and booking flow
-          all talk to each other. We design and maintain that as one system.
+          We align the profile to the money services and the searches that matter: categories/services, copy, Q&amp;A, offers, activity cadence,
+          review engine, and brand-safe review replies. Then we operate it consistently so it compounds.
         </p>
       </details>
+
       <details>
-        <summary>Do you need my logins?</summary>
+        <summary>Do you guarantee rankings?</summary>
         <p>
-          For Google Business Profile, we request Manager access via email. For phone, site, and booking tools,
-          we either connect through your existing accounts or help you set them up properly in your name.
+          No. Google is not controllable. What we do guarantee is a tight, repeatable operating system: correct structure, consistent activity,
+          and measurable reporting. You’ll know what changed, why it changed, and what moved.
         </p>
       </details>
+
       <details>
-        <summary>Do you work with multi-location businesses?</summary>
+        <summary>Do you need logins?</summary>
         <p>
-          Yes. We scope the system once, then adapt it across locations. The structure stays consistent,
-          the content and offers adjust per location.
+          We request Google Business Profile Manager access via email. For optional add-ons (LSA/automation), we use your accounts where possible
+          or set up clean ownership in your name.
         </p>
       </details>
+
       <details>
-        <summary>Can we meet in person?</summary>
+        <summary>Is LSA included?</summary>
         <p>
-          For East Coast U.S. (select cities), in-person sessions are available.
-          Otherwise, monthly calls are run on Zoom with everything documented simply.
+          LSA is optional. Most businesses should stabilize GBP first, then add LSA when intake and operations can handle the extra demand.
         </p>
       </details>
+
       <details>
-        <summary>Do you run paid ads?</summary>
+        <summary>What types of businesses is this best for?</summary>
         <p>
-          The core engagement is organic maps, site, and systems. If you’re running ads or want to later,
-          we make sure your system can actually handle the extra demand before you spend.
-        </p>
-      </details>
-      <details>
-        <summary>What about contracts and pricing?</summary>
-        <p>
-          Engagement is a flat system build + an ongoing retainer. No long-term contract lock-in.
-          We stay as long as the system is clearly worth more to you than it costs.
+          Highest ROI is usually HVAC, plumbing, and other call-driven local services. We can adapt to other local niches, but the offer is built
+          around Maps-driven demand.
         </p>
       </details>
     </section>
 
     <!-- AUDIT FORM -->
     <section id="audit" class="panel mt-18">
-      <h2>Request a quick audit</h2>
+      <h2>Request a GBP audit</h2>
       <p class="sub">
-        Share a few basics and we’ll look at your Maps presence, site, and current booking/phone setup.
-        If it’s a fit, we’ll show you what a full Rankit99 system would look like for your business.
+        Share the basics. We’ll return a short action plan: what to fix, what to target, and what we’d install in week 1.
       </p>
-      <!-- Zapier webhook -->
-      <form action="https://hooks.zapier.com/hooks/catch/17400171/umnheqw/" method="POST">
-        <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr">
-          <input name="name" placeholder="Name" required>
+
+      <form id="auditForm" action="https://hooks.zapier.com/hooks/catch/17400171/umnheqw/" method="POST">
+        <div class="grid2">
+          <input name="name" placeholder="Full name" required>
           <input name="email" type="email" placeholder="Email" required>
         </div>
-        <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr;margin-top:10px">
+
+        <div class="grid2" style="margin-top:10px">
           <input name="business" placeholder="Business name" required>
-          <input name="phone" type="tel" placeholder="Phone # (optional)" pattern="[0-9+\-\s()]*">
+          <input name="phone" type="tel" placeholder="Phone" required pattern="[0-9+\-\s()]*">
         </div>
+
+        <div class="grid2" style="margin-top:10px">
+          <select name="vertical" required>
+            <option value="" disabled selected>Business type</option>
+            <option>HVAC</option>
+            <option>Plumbing</option>
+            <option>Electrical</option>
+            <option>Roofing</option>
+            <option>Other (local service)</option>
+          </select>
+          <input name="city" placeholder="Primary city / service area" required>
+        </div>
+
         <div style="margin-top:10px">
-          <input name="url" placeholder="Website or Google Business Profile link (if you have one)">
+          <input name="gbp_link" placeholder="Google Business Profile link" required>
         </div>
+
+        <div class="grid2" style="margin-top:10px">
+          <select name="decision_maker" required>
+            <option value="" disabled selected>Are you the decision-maker?</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+          <select name="lsa_interest" required>
+            <option value="" disabled selected>Interested in LSA add-on?</option>
+            <option>No</option>
+            <option>Maybe</option>
+            <option>Yes</option>
+          </select>
+        </div>
+
         <button class="cta" type="submit" style="margin-top:12px">Send audit request</button>
       </form>
+
       <p class="mono sub" style="margin-top:10px">
         Prefer email? <a href="mailto:burgarddar@gmail.com">burgarddar@gmail.com</a><br/>
         Or call/text <a href="tel:+17372456877">+1&nbsp;(737)&nbsp;245-6877</a>
       </p>
     </section>
 
-<!-- JAPAN AUTOPILOT CASE STUDY -->
-<section class="panel mt-18">
-  <h2>Prepaid bookings while I was in Japan</h2>
-  <p>
-    The same system I install for clients kept my business fully booked while I spent a month in Japan —
-    generating <strong>fully prepaid ceramic coating and detailing appointments</strong> with 
-    <strong>zero no-shows</strong>.
-  </p>
-  <p class="sub">
-    When your Maps profile, site, SMS flows, and booking engine operate as a single pipeline, appointments continue
-    coming in even when you're offline, traveling, or not answering the phone.
-</section>
-    
-<!-- SYSTEM WORKFLOW WIDGETS -->
-<section class="grid3 mt-18">
-  
-  <div class="panel">
-    <h2>1. Lead enters system</h2>
-    <p>Webform → instant SMS acknowledgment + missed-call automation. No leads lost. No manual chasing.</p>
-  </div>
-
-  <div class="panel">
-    <h2>2. Booking engine</h2>
-    <p>New appointment → confirmation text → calendar sync → automated reminders. Zero no-shows.</p>
-  </div>
-
-  <div class="panel">
-    <h2>3. Review & subscription flow</h2>
-    <p>
-      After service → review request → thank-you message → automated offer for recurring subscriptions.
-      Converts one-time clients into monthly cashflow.
-    </p>
-  </div>
-
-</section>
-
-<!-- CASE STUDY: FULL STACK RESULTS -->
-<section id="case-study" class="panel mt-18">
-  <h2>Case study: A full-stack system that drives calls, bookings, and reviews</h2>
-
-  <p>
-    For this local service business, we implemented the complete Rankit99 System: Google Business Profile optimization,
-    service/category tuning, offer alignment, a booking engine with confirmations, missed-call SMS automation,
-    and a steady cadence of posts, photos, and owner-voice review replies.
-  </p>
-
-  <p class="sub">
-    The result: higher visibility, consistent bookings, stronger customer flow, and a review engine that compounds reputation automatically.
-  </p>
-
-  <!-- 50+ CALLS IMAGE -->
-  <figure class="case" style="margin-top:22px">
-    <img
-      src="https://sumptuousdetailing.com/wp-content/uploads/2025/09/Screenshot-2025-09-07-at-100136-AM-scaled.png"
-      alt="GBP insights showing over 50 calls in one month after systemized Google Business Profile management."
-      loading="lazy"
-      referrerpolicy="no-referrer">
-    <figcaption class="muted mono">
-      Over 50 calls in a month from Google Maps after systemized profile management and optimization.
-    </figcaption>
-  </figure>
-
-  <!-- HIGH REVIEW COUNT / SOCIAL PROOF -->
-  <figure class="case" style="margin-top:22px">
-    <img
-      src="https://sumptuousdetailing.com/wp-content/uploads/2025/12/IMG_3617.PNG"
-      alt="Google Business Profile with high review volume demonstrating strong customer flow and review engine performance."
-      loading="lazy"
-      style="width:100%;height:auto;border-radius:16px;border:1px solid var(--line)">
-    <figcaption class="muted mono">
-      High-volume reviews from real customers — proof of consistent bookings, customer care, and a functioning review engine.
-    </figcaption>
-  </figure>
-
-  <!-- INTERACTIONS / TRAFFIC PROOF -->
-  <figure class="case" style="margin-top:22px">
-    <img
-      src="https://sumptuousdetailing.com/wp-content/uploads/2025/12/IMG_3618.PNG"
-      alt="Google Business Profile interactions showing 1,000+ direct engagements and 8,000 profile views."
-      loading="lazy"
-      style="width:100%;height:auto;border-radius:16px;border:1px solid var(--line)">
-    <figcaption class="muted mono">
-      1,000+ customer interactions and 8,000+ profile views — sustained visibility driven by a properly tuned GBP.
-    </figcaption>
-  </figure>
-</section>
-
     <!-- SHORTS CAROUSEL -->
     <section id="shorts" class="panel mt-18">
-      <h2>Shorts: quick wins for your profile</h2>
-      <p class="sub">A few fast breakdowns on practical ways to strengthen your Google presence and booking flow.</p>
+      <h2>Shorts: practical GBP wins</h2>
+      <p class="sub">Quick breakdowns on what actually moves Maps performance.</p>
       <div class="carousel">
         <button class="nav prev" aria-label="Previous">‹</button>
         <div class="track">
@@ -497,19 +464,15 @@
   </div>
 
   <script>
-    // Year
-    document.getElementById('y').textContent=new Date().getFullYear();
+    document.getElementById('y').textContent = new Date().getFullYear();
 
     // Carousel: arrows + tap-to-activate
     document.querySelectorAll('.carousel').forEach(caro => {
       const track = caro.querySelector('.track');
       const prev = caro.querySelector('.prev');
       const next = caro.querySelector('.next');
-
       if (prev) prev.addEventListener('click', () => track.scrollBy({left:-340, behavior:'smooth'}));
       if (next) next.addEventListener('click', () => track.scrollBy({left: 340, behavior:'smooth'}));
-
-      // Tap overlay to enable iframe interaction on mobile
       caro.querySelectorAll('.slide .tap').forEach(tap => {
         tap.addEventListener('click', function(e){
           var slide = e.currentTarget.closest('.slide');
@@ -518,18 +481,14 @@
       });
     });
 
-    // On desktop (hover + fine pointer), allow iframes immediately (hide taps)
+    // On desktop, allow iframes immediately
     var isDesktop = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-    if (isDesktop) {
-      document.querySelectorAll('.slide').forEach(function(slide){
-        slide.classList.add('active');
-      });
-    }
-  </script>
+    if (isDesktop) document.querySelectorAll('.slide').forEach(slide => slide.classList.add('active'));
 
-  <!-- Pixel event -->
-  <script>
-    try { fbq && fbq('track', 'CompleteRegistration'); } catch(e) {}
+    // Pixel: only fire on form submit (not page load)
+    document.getElementById('auditForm')?.addEventListener('submit', function(){
+      try { if (window.fbq) fbq('track', 'Lead'); } catch(e) {}
+    });
   </script>
 </body>
 </html>
