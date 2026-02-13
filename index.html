@@ -3,102 +3,50 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>GBP Autopilot for Local Service Businesses – Rankit99</title>
-  <meta name="description" content="Rankit99 runs Google Business Profile as a performance channel: keyword-aligned optimization, consistent posting, review engine, and clean reporting that drives calls from Maps."/>
+  <title>Darren Burgard – Marketing Systems & Growth Strategy</title>
+  <meta name="description" content="Building marketing systems that drive measurable growth for established service businesses. Portfolio includes Sumptuous Detailing, CAH Tech, and Lofty Spaces."/>
   <link rel="canonical" href="https://www.rankit99.com/"/>
 
   <style>
-    :root{--bg:#0b0b0b;--fg:#f5f5f5;--muted:#9aa0a6;--line:#1a1a1a;--card:#0e0e0e}
+    :root{--bg:#0b0b0b;--fg:#f5f5f5;--muted:#9aa0a6;--line:#1a1a1a;--card:#0e0e0e;--accent:#fff}
     *{box-sizing:border-box}html,body{margin:0;height:100%}
     body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial;background:var(--bg);color:var(--fg);line-height:1.6}
-    .wrap{max-width:980px;margin:0 auto;padding:48px 20px}
-    header{padding:24px 0 14px;border-bottom:1px solid var(--line);margin-bottom:28px}
-    h1{font-size:34px;line-height:1.15;margin:10px 0 6px;font-weight:900;letter-spacing:.2px}
-    .sub{color:var(--muted);font-size:15px}
-    .badge{border:1px solid var(--line);padding:6px 10px;border-radius:999px;display:inline-block;font-size:12px;color:var(--muted)}
-    .panel{border:1px solid var(--line);border-radius:16px;padding:22px;background:var(--card)}
-    .cta{display:inline-block;padding:14px 18px;border:1px solid #fff;border-radius:12px;text-decoration:none;color:#0b0b0b;background:#fff;font-weight:800}
-    .cta.secondary{background:transparent;color:#fff;border-color:var(--line)}
-    .cta-stack{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
-    .hero{display:grid;gap:18px;grid-template-columns:1fr}
-    @media(min-width:900px){.hero{grid-template-columns:1.25fr .75fr}}
-    h2{font-size:22px;margin:16px 0 8px}
-    p{margin:10px 0}
-    ul,ol{padding-left:18px;margin:8px 0} li{margin:6px 0}
-    details{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#0f0f0f;margin-top:10px}
-    summary{cursor:pointer;font-weight:700}
-    footer{margin-top:48px;padding:24px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
-    input,button,select{font:inherit}
-    input,select{
-      padding:12px;border:1px solid var(--line);border-radius:10px;background:#0f0f0f;color:#fff;width:100%;
-      outline:none;
-    }
-    input:focus,select:focus{border-color:#2a2a2a}
-    .grid3{display:grid;gap:14px}
-    @media(min-width:900px){.grid3{grid-template-columns:1fr 1fr 1fr}}
-    .grid2{display:grid;gap:14px}
-    @media(min-width:900px){.grid2{grid-template-columns:1fr 1fr}}
-    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
-    .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
-    .pill{border-radius:999px;border:1px solid var(--line);padding:4px 10px;font-size:12px;color:var(--muted)}
-    .mt-18{margin-top:18px}
-
-    /* Proof images */
-    .case img{width:100%;height:auto;border-radius:16px;border:1px solid var(--line);display:block}
-    .case figcaption{margin-top:8px;color:var(--muted)}
-    .kpi{display:grid;gap:10px;margin-top:10px}
-    @media(min-width:900px){.kpi{grid-template-columns:1fr 1fr 1fr}}
-    .kpi .box{border:1px solid var(--line);border-radius:14px;padding:14px;background:#0f0f0f}
-    .kpi .big{font-size:18px;font-weight:900}
-    .kpi .small{color:var(--muted);font-size:13px;margin-top:4px}
-
-    /* Pricing box */
-    .price{border:1px solid #2a2a2a;background:#0f0f0f}
-    .price .row{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px solid var(--line)}
-    .price .row:first-child{border-top:none;padding-top:0}
-    .price .name{font-weight:900}
-    .price .val{font-weight:900;white-space:nowrap}
-    .note{color:var(--muted);font-size:13px}
-
-    /* Shorts carousel (mobile-first, tap-to-activate) */
-    .carousel{position:relative;margin-top:18px}
-    .carousel .track{
-      display:flex;gap:12px;overflow-x:auto;padding:6px 2px 12px;
-      scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
-      overscroll-behavior-x:contain;scrollbar-width:none;
-    }
-    .carousel .track::-webkit-scrollbar{display:none}
-    .slide{
-      flex:0 0 280px;max-width:320px;aspect-ratio:9/16;
-      border:1px solid var(--line);border-radius:16px;background:#000;
-      scroll-snap-align:center;position:relative;overflow:hidden;
-    }
-    .slide iframe{position:absolute;inset:0;width:100%;height:100%;border:0;pointer-events:none}
-    .slide .tap{
-      position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-      background:linear-gradient(0deg, rgba(0,0,0,.45), rgba(0,0,0,.45));
-      font-weight:800;border-radius:16px;user-select:none;cursor:pointer
-    }
-    .slide .tap span{background:#fff;color:#000;padding:8px 12px;border-radius:999px;font-size:13px}
-    .slide.active iframe{pointer-events:auto}
-    .slide.active .tap{display:none}
-    .carousel .nav{
-      position:absolute;top:50%;transform:translateY(-50%);
-      border:1px solid var(--line);background:#0e0e0e;color:#fff;
-      border-radius:999px;width:36px;height:36px;display:none;align-items:center;justify-content:center;cursor:pointer
-    }
-    @media(min-width:980px){.carousel .nav{display:flex}.carousel .prev{left:-8px}.carousel .next{right:-8px}}
+    .wrap{max-width:1100px;margin:0 auto;padding:48px 20px}
+    header{padding:32px 0 20px;border-bottom:1px solid var(--line);margin-bottom:40px}
+    h1{font-size:42px;line-height:1.1;margin:12px 0 8px;font-weight:900;letter-spacing:-0.5px}
+    .sub{color:var(--muted);font-size:16px;line-height:1.5}
+    .badge{border:1px solid var(--line);padding:6px 12px;border-radius:999px;display:inline-block;font-size:13px;color:var(--muted);margin-bottom:16px}
+    .panel{border:1px solid var(--line);border-radius:16px;padding:28px;background:var(--card);margin-bottom:24px}
+    .cta{display:inline-block;padding:14px 20px;border:1px solid #fff;border-radius:12px;text-decoration:none;color:#0b0b0b;background:#fff;font-weight:800;transition:all 0.2s}
+    .cta:hover{background:#e5e5e5}
+    h2{font-size:26px;margin:20px 0 12px;font-weight:800}
+    h3{font-size:20px;margin:16px 0 8px;font-weight:700}
+    p{margin:12px 0}
+    ul{padding-left:20px;margin:10px 0} li{margin:8px 0}
+    .grid{display:grid;gap:20px;margin-top:24px}
+    @media(min-width:900px){.grid{grid-template-columns:1fr 1fr 1fr}}
+    .portfolio-item{border:1px solid var(--line);border-radius:16px;padding:24px;background:#0f0f0f;transition:border-color 0.2s}
+    .portfolio-item:hover{border-color:#2a2a2a}
+    .portfolio-item h3{margin-top:0}
+    .portfolio-link{color:var(--accent);text-decoration:none;font-weight:600;font-size:14px}
+    .portfolio-link:hover{text-decoration:underline}
+    .testimonial{border-left:3px solid var(--accent);padding-left:20px;margin:24px 0;font-style:italic;color:var(--muted)}
+    .testimonial-author{font-style:normal;font-weight:700;color:var(--fg);margin-top:8px}
+    footer{margin-top:60px;padding:24px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px;text-align:center}
+    .contact{margin-top:32px}
+    .contact a{color:var(--accent);text-decoration:none}
+    .contact a:hover{text-decoration:underline}
   </style>
 
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
-    "@type":"ProfessionalService",
-    "name":"Rankit99",
+    "@type":"Person",
+    "name":"Darren Burgard",
     "url":"https://www.rankit99.com/",
-    "description":"Rankit99 runs Google Business Profile as a performance channel: keyword-aligned optimization, consistent posting, review engine, and reporting built to drive calls from Maps.",
-    "areaServed":"United States",
-    "priceRange":"$$",
+    "description":"Marketing strategist building systems that drive measurable growth for established service businesses.",
+    "jobTitle":"Marketing Strategist",
+    "email":"darren@rankit99.com",
     "telephone":"+1-737-245-6877"
   }
   </script>
@@ -107,388 +55,101 @@
 <body>
   <div class="wrap">
     <header>
-      <div class="badge">Google Business Profile • Maps Calls • Simple Systems</div>
-      <h1>More calls from Google Maps — without rebuilding your business.</h1>
+      <div class="badge">Marketing Systems • Growth Strategy • Portfolio</div>
+      <h1>Darren Burgard</h1>
       <div class="sub">
-        Rankit99 runs your Google Business Profile like a performance channel: keyword-aligned optimization, consistent posting,
-        review momentum, and clear reporting. Built for owner-operators who want more qualified calls and less guesswork.
-      </div>
-      <div class="sub" style="margin-top:6px;">
-        Start with GBP. Add LSA or automation later if/when it makes sense.
+        Building marketing systems that drive measurable growth for established service businesses. 
+        From foundational SEO to full automation—focused on results, not vanity metrics.
       </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
-      <!-- LEFT -->
-      <div class="panel">
-        <h2>The GBP Autopilot (Core)</h2>
-        <p class="sub">If your listing already exists, good. We tune it hard, then keep it active with a controlled system.</p>
-
-        <ul>
-          <li><strong>Keyword + service alignment</strong><br/>Services, copy, categories, attributes, Q&amp;A, and offers aligned to what people actually search.</li>
-          <li><strong>Consistent activity (without you thinking about it)</strong><br/>Automated posts + structured templates. We monitor, adjust, and keep it clean.</li>
-          <li><strong>Review engine</strong><br/>A simple script your team can follow + templates that increase review volume without awkwardness.</li>
-          <li><strong>Review responses (brand-safe)</strong><br/>Fast replies that sound human and protect your positioning.</li>
-          <li><strong>Reporting that matters</strong><br/>Map-pack movement + searches + calls/actions. No vanity dashboards.</li>
-        </ul>
-
-        <div class="pill-row">
-          <div class="pill">HVAC</div>
-          <div class="pill">Plumbing</div>
-          <div class="pill">Home services</div>
-          <div class="pill">Local operators</div>
-        </div>
-
-        <div class="cta-stack" style="margin-top:12px">
-          <a class="cta" href="#audit">Request a GBP audit →</a>
-          <a class="cta secondary" href="#proof">See proof</a>
-        </div>
-
-        <p class="note" style="margin-top:12px">
-          You keep your current website and phone system. We start with the highest-leverage layer first.
-        </p>
-      </div>
-
-      <!-- RIGHT: PRICING + ADD-ONS -->
-      <div class="panel price">
-        <h2>Pricing (starting at)</h2>
-
-        <div class="row">
-          <div>
-            <div class="name">GBP Autopilot (Core)</div>
-            <div class="note">Optimization install + ongoing management</div>
-          </div>
-          <div class="val">$750 install<br/>$500/mo</div>
-        </div>
-
-        <div class="row">
-          <div>
-            <div class="name">LSA Setup (optional)</div>
-            <div class="note">Profile build + categories + intake alignment</div>
-          </div>
-          <div class="val">+$500 install</div>
-        </div>
-
-        <div class="row">
-          <div>
-            <div class="name">LSA Management (optional)</div>
-            <div class="note">Ongoing tuning + monitoring</div>
-          </div>
-          <div class="val">+$300/mo</div>
-        </div>
-
-        <p class="note" style="margin-top:12px">
-          Multi-location and heavy competition markets price higher. You’ll get an exact quote after the audit.
-        </p>
-
-        <p style="margin-top:14px">
-          <a class="cta" href="#audit">Get the audit</a>
-        </p>
-
-        <p class="mono sub" style="margin-top:10px">
-          No long contracts. We stay if performance is clear.
-        </p>
-      </div>
-    </section>
-
-    <!-- WHAT ELSE WE DO (BOX) -->
-    <section class="panel mt-18" id="addons">
-      <h2>Optional add-ons (only after Core is stable)</h2>
-      <p class="sub">
-        These are not required to start. We add them once your GBP is tight and you want more conversion lift.
-      </p>
-      <div class="grid2">
-        <div class="panel" style="background:#0f0f0f">
-          <h2 style="margin-top:0">Missed-call capture + follow-ups</h2>
-          <p class="sub">
-            If your business misses calls, you lose jobs. We can install missed-call text-back + follow-ups once messaging is compliant.
-          </p>
-          <ul>
-            <li>Missed call → instant response</li>
-            <li>Simple intake (job type + zip + photos)</li>
-            <li>2–3 follow-ups until reply</li>
-          </ul>
-          <p class="note">Best as Phase 2. Not needed to start GBP gains.</p>
-        </div>
-        <div class="panel" style="background:#0f0f0f">
-          <h2 style="margin-top:0">Landing page (if your site is weak)</h2>
-          <p class="sub">
-            If your website is slow/confusing, we build one clean page that answers objections and pushes calls.
-          </p>
-          <ul>
-            <li>Offer clarity + trust blocks</li>
-            <li>Service area + FAQs</li>
-            <li>Call-first design</li>
-          </ul>
-          <p class="note">Only if it’s currently costing you conversions.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section class="panel mt-18" id="how">
-      <h2>How it runs</h2>
-      <ol>
-        <li><strong>Audit (10–15 min)</strong><br/>We review your GBP and identify what’s limiting calls (structure, relevance, proof, activity, reviews).</li>
-        <li><strong>Install (week 1)</strong><br/>We implement the optimization + automation templates + review engine.</li>
-        <li><strong>Operate (ongoing)</strong><br/>We keep it clean: posting cadence, copy adjustments, review replies, and monthly reporting.</li>
-      </ol>
-      <p class="sub">This is built to be low-friction for you. We do the work. You approve the basics. Your team runs the review script.</p>
-      <p><a class="cta" href="#audit">Request the audit</a></p>
-    </section>
-
-    <!-- PROOF -->
-    <section id="proof" class="panel mt-18">
-      <h2>Proof (real profile data)</h2>
-      <p class="sub">
-        GBP results aren’t one magic tweak. They come from tight structure + consistent activity + review momentum.
-        Here are real profile snapshots from a systemized approach.
-      </p>
-
-      <div class="kpi">
-        <div class="box">
-          <div class="big">50+ calls / month</div>
-          <div class="small">From Maps activity + profile tuning</div>
-        </div>
-        <div class="box">
-          <div class="big">High review volume</div>
-          <div class="small">Review engine that compounds trust</div>
-        </div>
-        <div class="box">
-          <div class="big">8,000+ views</div>
-          <div class="small">Sustained visibility signals</div>
-        </div>
-      </div>
-
-      <figure class="case" style="margin-top:18px">
-        <img
-          src="https://sumptuousdetailing.com/wp-content/uploads/2025/09/Screenshot-2025-09-07-at-100136-AM-scaled.png"
-          alt="GBP insights showing over 50 calls in one month."
-          loading="lazy"
-          referrerpolicy="no-referrer">
-        <figcaption class="mono">Example: 50+ calls in a month from Google Maps after systemized GBP management.</figcaption>
-      </figure>
-
-      <figure class="case" style="margin-top:18px">
-        <img
-          src="https://sumptuousdetailing.com/wp-content/uploads/2025/12/IMG_3617.PNG"
-          alt="Google Business Profile showing high review count."
-          loading="lazy"
-          referrerpolicy="no-referrer">
-        <figcaption class="mono">Review volume: consistent proof + conversion leverage.</figcaption>
-      </figure>
-
-      <figure class="case" style="margin-top:18px">
-        <img
-          src="https://sumptuousdetailing.com/wp-content/uploads/2025/12/IMG_3618.PNG"
-          alt="Google Business Profile interactions showing 1,000+ engagements and 8,000 profile views."
-          loading="lazy"
-          referrerpolicy="no-referrer">
-        <figcaption class="mono">Engagement and visibility: sustained signals, not a one-time spike.</figcaption>
-      </figure>
-    </section>
-
-    <!-- CASE: OPERATOR CRED -->
-    <section class="panel mt-18">
-      <h2>Operator-built</h2>
+    <!-- INTRO -->
+    <section class="panel">
+      <h2>What I Do</h2>
       <p>
-        This system is not theory. It’s the same approach used to keep a local service business generating bookings while the operator was traveling.
-        The point: build a system that holds up even when you’re not “on it” every day.
+        I build complete marketing systems for service businesses that understand marketing is an investment, not an expense. 
+        My approach is systematic, data-driven, and designed to compound results over time.
       </p>
-      <div class="grid3">
-        <div class="panel" style="background:#0f0f0f">
-          <h2 style="margin-top:0">1) Visibility</h2>
-          <p class="sub">Ranking signals and conversion signals aligned.</p>
+      <p>
+        <strong>Core focus areas:</strong> Local SEO, Google Business Profile optimization, marketing automation, 
+        content systems, and lead nurturing. Everything is built to drive calls, leads, and revenue—not just traffic.
+      </p>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section>
+      <h2>Selected Work</h2>
+      <div class="grid">
+        
+        <!-- Sumptuous Detailing -->
+        <div class="portfolio-item">
+          <h3>Sumptuous Detailing</h3>
+          <p class="sub">Premium mobile car detailing and ceramic coating service in Atlanta, GA.</p>
+          <p>
+            Built complete digital presence from the ground up: custom website, local SEO strategy, 
+            Google Business Profile optimization, and automated booking system. Positioned as the premium 
+            choice in a competitive market.
+          </p>
+          <p><a href="https://sumptuousdetailing.com" target="_blank" class="portfolio-link">View Site →</a></p>
         </div>
-        <div class="panel" style="background:#0f0f0f">
-          <h2 style="margin-top:0">2) Proof</h2>
-          <p class="sub">Reviews, photos, offers, and answers that remove doubt.</p>
+
+        <!-- CAH Tech -->
+        <div class="portfolio-item">
+          <h3>CAH Tech</h3>
+          <p class="sub">Technology consulting and IT services firm.</p>
+          <p>
+            Developed brand positioning, website architecture, and content strategy. Focused on establishing 
+            credibility and generating qualified leads through clear messaging and strategic SEO.
+          </p>
+          <p><a href="https://cahtech.com" target="_blank" class="portfolio-link">View Site →</a></p>
         </div>
-        <div class="panel" style="background:#0f0f0f">
-          <h2 style="margin-top:0">3) Cadence</h2>
-          <p class="sub">Consistent activity without you managing it.</p>
+
+        <!-- Lofty Spaces -->
+        <div class="portfolio-item">
+          <h3>Lofty Spaces</h3>
+          <p class="sub">Modern real estate and property showcase platform.</p>
+          <p>
+            Created clean, conversion-focused design system with emphasis on visual storytelling and 
+            user experience. Built to showcase properties with minimal friction and maximum impact.
+          </p>
+          <p><a href="https://predeploy-bafadce7-loftyspace-599vj9rx-zsdcb9pzbapfeip3as3epy.manus.space/" target="_blank" class="portfolio-link">View Site →</a></p>
         </div>
+
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="panel mt-18">
-      <h2>FAQ</h2>
-
-      <details>
-        <summary>We already have a GBP. What do you actually change?</summary>
-        <p>
-          We align the profile to the money services and the searches that matter: categories/services, copy, Q&amp;A, offers, activity cadence,
-          review engine, and brand-safe review replies. Then we operate it consistently so it compounds.
-        </p>
-      </details>
-
-      <details>
-        <summary>Do you guarantee rankings?</summary>
-        <p>
-          No. Google is not controllable. What we do guarantee is a tight, repeatable operating system: correct structure, consistent activity,
-          and measurable reporting. You’ll know what changed, why it changed, and what moved.
-        </p>
-      </details>
-
-      <details>
-        <summary>Do you need logins?</summary>
-        <p>
-          We request Google Business Profile Manager access via email. For optional add-ons (LSA/automation), we use your accounts where possible
-          or set up clean ownership in your name.
-        </p>
-      </details>
-
-      <details>
-        <summary>Is LSA included?</summary>
-        <p>
-          LSA is optional. Most businesses should stabilize GBP first, then add LSA when intake and operations can handle the extra demand.
-        </p>
-      </details>
-
-      <details>
-        <summary>What types of businesses is this best for?</summary>
-        <p>
-          Highest ROI is usually HVAC, plumbing, and other call-driven local services. We can adapt to other local niches, but the offer is built
-          around Maps-driven demand.
-        </p>
-      </details>
-    </section>
-
-    <!-- AUDIT FORM -->
-    <section id="audit" class="panel mt-18">
-      <h2>Request a GBP audit</h2>
-      <p class="sub">
-        Share the basics. We’ll return a short action plan: what to fix, what to target, and what we’d install in week 1.
-      </p>
-
-      <form id="auditForm" action="https://hooks.zapier.com/hooks/catch/17400171/umnheqw/" method="POST">
-        <div class="grid2">
-          <input name="name" placeholder="Full name" required>
-          <input name="email" type="email" placeholder="Email" required>
-        </div>
-
-        <div class="grid2" style="margin-top:10px">
-          <input name="business" placeholder="Business name" required>
-          <input name="phone" type="tel" placeholder="Phone" required pattern="[0-9+\-\s()]*">
-        </div>
-
-        <div class="grid2" style="margin-top:10px">
-          <select name="vertical" required>
-            <option value="" disabled selected>Business type</option>
-            <option>HVAC</option>
-            <option>Plumbing</option>
-            <option>Electrical</option>
-            <option>Roofing</option>
-            <option>Other (local service)</option>
-          </select>
-          <input name="city" placeholder="Primary city / service area" required>
-        </div>
-
-        <div style="margin-top:10px">
-          <input name="gbp_link" placeholder="Google Business Profile link" required>
-        </div>
-
-        <div class="grid2" style="margin-top:10px">
-          <select name="decision_maker" required>
-            <option value="" disabled selected>Are you the decision-maker?</option>
-            <option>Yes</option>
-            <option>No</option>
-          </select>
-          <select name="lsa_interest" required>
-            <option value="" disabled selected>Interested in LSA add-on?</option>
-            <option>No</option>
-            <option>Maybe</option>
-            <option>Yes</option>
-          </select>
-        </div>
-
-        <button class="cta" type="submit" style="margin-top:12px">Send audit request</button>
-      </form>
-
-      <p class="mono sub" style="margin-top:10px">
-        Prefer email? <a href="mailto:burgarddar@gmail.com">burgarddar@gmail.com</a><br/>
-        Or call/text <a href="tel:+17372456877">+1&nbsp;(737)&nbsp;245-6877</a>
-      </p>
-    </section>
-
-    <!-- SHORTS CAROUSEL -->
-    <section id="shorts" class="panel mt-18">
-      <h2>Shorts: practical GBP wins</h2>
-      <p class="sub">Quick breakdowns on what actually moves Maps performance.</p>
-      <div class="carousel">
-        <button class="nav prev" aria-label="Previous">‹</button>
-        <div class="track">
-          <div class="slide">
-            <div class="tap"><span>Tap to play</span></div>
-            <iframe
-              title="GBP tip 1"
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              src="https://www.youtube-nocookie.com/embed/oCYc4JXwVuo?rel=0&modestbranding=1&playsinline=1"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-          </div>
-
-          <div class="slide">
-            <div class="tap"><span>Tap to play</span></div>
-            <iframe
-              title="GBP tip 2"
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              src="https://www.youtube-nocookie.com/embed/_yt0YdiWySI?rel=0&modestbranding=1&playsinline=1"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-          </div>
-
-          <div class="slide">
-            <div class="tap"><span>Tap to play</span></div>
-            <iframe
-              title="GBP tip 3"
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              src="https://www.youtube-nocookie.com/embed/DFf1KQV8Xso?rel=0&modestbranding=1&playsinline=1"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <button class="nav next" aria-label="Next">›</button>
+    <!-- TESTIMONIAL -->
+    <section style="margin-top:40px">
+      <div class="testimonial">
+        "Working alongside Darren for over half a decade, it's clear that he's a talented marketer."
+        <div class="testimonial-author">— Carlos, CAH Tech</div>
       </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="panel" style="margin-top:40px">
+      <h2>How I Work</h2>
+      <ul>
+        <li><strong>Foundation first:</strong> Build the core infrastructure (SEO, GBP, content) before scaling.</li>
+        <li><strong>Systems over tactics:</strong> Repeatable processes that compound results, not one-off campaigns.</li>
+        <li><strong>Data-driven decisions:</strong> Track what matters—calls, leads, revenue. No vanity metrics.</li>
+        <li><strong>Strategic partnership:</strong> Work with established businesses ($1M-$10M revenue) who understand ROI.</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+      <h2>Get In Touch</h2>
+      <p>Interested in working together? Let's talk about your growth goals.</p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:darren@rankit99.com">darren@rankit99.com</a><br/>
+        <strong>Phone:</strong> <a href="tel:+17372456877">+1 (737) 245-6877</a>
+      </p>
     </section>
 
     <footer>
-      <div>© <span id="y"></span> Rankit99. All rights reserved.</div>
-      <div class="sub">Mailing address 715 Camp Perrin Rd, Lawrenceville, GA 30043</div>
+      <p>© 2026 Darren Burgard. All rights reserved.</p>
     </footer>
   </div>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-
-    // Carousel: arrows + tap-to-activate
-    document.querySelectorAll('.carousel').forEach(caro => {
-      const track = caro.querySelector('.track');
-      const prev = caro.querySelector('.prev');
-      const next = caro.querySelector('.next');
-      if (prev) prev.addEventListener('click', () => track.scrollBy({left:-340, behavior:'smooth'}));
-      if (next) next.addEventListener('click', () => track.scrollBy({left: 340, behavior:'smooth'}));
-      caro.querySelectorAll('.slide .tap').forEach(tap => {
-        tap.addEventListener('click', function(e){
-          var slide = e.currentTarget.closest('.slide');
-          slide.classList.add('active');
-        }, {passive:true});
-      });
-    });
-
-    // On desktop, allow iframes immediately
-    var isDesktop = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-    if (isDesktop) document.querySelectorAll('.slide').forEach(slide => slide.classList.add('active'));
-
-    // Pixel: only fire on form submit (not page load)
-    document.getElementById('auditForm')?.addEventListener('submit', function(){
-      try { if (window.fbq) fbq('track', 'Lead'); } catch(e) {}
-    });
-  </script>
 </body>
 </html>
